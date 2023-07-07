@@ -1,0 +1,383 @@
+html, body, #wrapper {
+  box-sizing: border-box;
+  margin: 0;
+  min-height: 100%;
+  outline: none;
+  padding: 0;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #e62b1e url(assets/brand/bg-tedx-trans.png) center center no-repeat;
+  background-size: 90%;
+  color: #000;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  font-size: 16px;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+::selection {
+  background: #f5a9a3;
+}
+
+::-moz-selection {
+  background: #f5a9a3;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+a, a:link, a:hover, a:focus {
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a.lite {
+  color: inherit;
+  text-decoration: underline;
+}
+a.lite:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, serif;
+}
+
+@media (max-width: 767px) {
+  p {
+    word-break: break-word;
+  }
+}
+.btn, .btn:hover, .btn:focus {
+  background: #e62b1e;
+  border-radius: 0;
+  color: #FFF;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+  outline: none;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+}
+
+.btn-primary, .btn-primary:hover {
+  border: 2px solid #e62b1e !important;
+}
+
+.btn-secondary, .btn-secondary:hover {
+  border: 2px solid #FFF !important;
+}
+
+.btn-white-bg {
+  background: none;
+  color: #e62b1e;
+  border: 2px solid #e62b1e !important;
+}
+.btn-white-bg:hover {
+  color: #FFF;
+  border: 2px solid #ca2216 !important;
+}
+
+.btn:hover {
+  background: #ca2216;
+}
+
+.brand {
+  color: #e62b1e !important;
+}
+
+.navbar {
+  background: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.navbar .navbar-brand {
+  color: #FFF;
+}
+.navbar .navbar-toggler {
+  border: none;
+  outline: none;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-toggler {
+    transform: scale(1.5);
+  }
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='hsl(4, 80%, 100%)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+  color: #FFF !important;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 2rem;
+  padding: 1rem;
+  text-align: right;
+  transition: all 0.3s ease-in-out;
+}
+.nav-link:hover {
+  color: #e62b1e !important;
+}
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .nav-link {
+    border-top: 2px solid transparent;
+    font-size: 1rem;
+    margin: 0 1.2rem;
+    padding: 1.5rem 0 !important;
+    text-align: center;
+  }
+  .nav-link:hover {
+    border-top: 2px solid #e62b1e !important;
+  }
+}
+
+.nav-item.active .nav-link, .nav-item.active:hover .nav-link {
+  color: #e62b1e !important;
+}
+@media (min-width: 992px) {
+  .nav-item.active .nav-link, .nav-item.active:hover .nav-link {
+    border-top: 2px solid #e62b1e;
+  }
+}
+
+.navbar-expand-xl {
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse.collapse {
+    height: 100vh;
+    max-height: none;
+    overflow-y: auto;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar-collapse.collapsing {
+    height: 0 !important;
+  }
+}
+#Home {
+  background: url("assets/bg-intro.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: left bottom;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  #Home {
+    background-position: center center;
+  }
+}
+#Home .row {
+  padding-top: 150px;
+}
+#Home .logo {
+  display: inline-block;
+  margin: 0 0 1rem;
+  max-width: 500px;
+  padding: 0;
+  width: 100%;
+}
+#Home p {
+  background: #000;
+  border-top: 4px solid #e62b1e;
+  color: #FFF;
+  font-size: 1.1rem;
+  margin: 2rem 0 0;
+  padding: 1.5rem;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #Home p {
+    margin: 4rem 0 2rem 5rem;
+    padding: 1.5rem 1.5rem 3rem;
+  }
+}
+#Home .btn-primary {
+  float: right;
+  padding: 1rem 3.5rem;
+}
+@media (max-width: 767px) {
+  #Home .btn-primary {
+    margin: 3rem 0;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  #Home .btn-primary {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+.side-year {
+  display: none;
+  z-index: 9999;
+  transform: rotate(-90deg);
+}
+@media (min-width: 768px) {
+  .side-year {
+    display: block;
+    left: -17.5vh;
+    position: fixed;
+    top: 27.5vh;
+  }
+  .side-year span {
+    display: block;
+    color: #FFF;
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 11vh;
+    margin-top: 50px;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  }
+  .side-year span::before {
+    background: #FFF;
+    bottom: 23px;
+    content: " ";
+    display: block;
+    height: 2px;
+    left: -555vh;
+    margin: 0;
+    position: absolute;
+    width: 550vh;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  }
+  .side-year span::after {
+    background: #FFF;
+    bottom: 23px;
+    content: " ";
+    display: block;
+    height: 2px;
+    margin: 0;
+    position: absolute;
+    right: -45vh;
+    width: 50vh;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.date-location {
+  background: #e62b1e;
+  border-left: 2px solid #FFF;
+  bottom: 0;
+  color: #FFF;
+  display: block;
+  font-size: 1.1rem;
+  padding: 1.5rem;
+  right: 0;
+}
+.date-location strong, .date-location span {
+  display: block;
+}
+@media (min-width: 768px) {
+  .date-location {
+    padding: 2.5rem;
+    position: absolute;
+  }
+}
+
+#About, #Speakers, #Partners, #Contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  #About, #Speakers, #Partners, #Contact {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+#About {
+  background: #000;
+  color: #FFF;
+}
+#About h2 {
+  margin-top: 6rem;
+}
+
+#Speakers {
+  background: #e62b1e;
+  color: #FFF;
+}
+#Speakers svg {
+  border: 5px dashed #FFF;
+  fill: #FFF;
+}
+
+#Partners, #Contact {
+  background: #FFF;
+  color: #000;
+}
+#Partners svg, #Contact svg {
+  border: 5px dashed #e62b1e;
+  fill: #ca2216;
+}
+
+#Speakers svg, #Partners svg, #Contact svg {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20%;
+  border-radius: 30px;
+  stroke-width: 0;
+  transition: all 0.3s ease-in-out;
+}
+#Speakers svg:hover, #Partners svg:hover, #Contact svg:hover {
+  padding: 17%;
+}
+
+@media (min-width: 768px) {
+  #Contact::after {
+    content: " ";
+    background: #e62b1e;
+    display: block;
+    height: 400px;
+    margin-top: -175px;
+    position: absolute;
+    left: -25vw;
+    width: 55vw;
+    transform: skew(25deg);
+  }
+}
+#End-Game {
+  background-size: 40%;
+  background: #000 url("assets/brand/bg-tedx-trans.png") bottom -30px center no-repeat;
+  color: #FFF;
+  padding-top: 6rem;
+  padding-bottom: 118px;
+  border-bottom: 6px solid #ca2216;
+}
+
+/*# sourceMappingURL=style.css.map */
