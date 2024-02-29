@@ -1,3 +1,5 @@
+I made this for a special event in my school of TEDx [ Seth Anandram Jaipuria School ]
+
 
 TEDxSAJS Website ✨
 Welcome to the official repository for the TEDxSAJS website! This repository contains all the necessary code and resources to build and deploy the website for the TEDx event at SAJS (School Name).
